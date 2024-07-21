@@ -25,7 +25,7 @@ def analyze():
         subset = df[df['type'] == t]
         plt.plot(subset['no_of_objects'], subset['size'], label=t, marker='o')
 
-    plt.title('Deserialization Time by Number of Objects')
+    plt.title('Serialization Size by Number of Objects')
     plt.xlabel('Number of Objects')
     plt.ylabel('Size (bytes)')
     plt.legend()
@@ -36,6 +36,3 @@ def analyze():
     plt.ylim(0, df['size'].max() + 10)
     plt.yticks(range(0, df['size'].max() + 10, 4000))
     plt.grid(True)
-    plt.show()
-
-analyze()

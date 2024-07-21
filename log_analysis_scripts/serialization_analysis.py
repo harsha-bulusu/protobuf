@@ -35,6 +35,4 @@ def analyze():
     plt.ylim(0, df['ms'].max() + 10)
     plt.yticks(range(0, df['ms'].max() + 10, 10))
     plt.grid(True)
-    plt.show()
       
-analyze()

@@ -30,6 +30,3 @@ def analyze():
     plt.legend()
     plt.gca().yaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{int(x)}'))
     plt.grid(True)
-    plt.show()
-
-analyze()
