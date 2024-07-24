@@ -888,3 +888,13 @@
 22:41:13.793 [HTTP-Dispatcher] INFO  com.harsha.util.Helper - Time taken for serializing 1000000 Java Objects into JSON is: 124ms
 22:41:19.065 [HTTP-Dispatcher] INFO  com.harsha.util.Helper - Time taken for serializing 1000000 Java Objects into JSON is: 141ms
 22:41:24.347 [HTTP-Dispatcher] INFO  com.harsha.util.Helper - Time taken for serializing 1000000 Java Objects into JSON is: 132ms
+18:25:24.388 [main] INFO  com.harsha.server.MyHttpServer - server started running on port: 8080
+18:27:06.065 [main] INFO  com.harsha.server.MyHttpServer - server started running on port: 8080
+18:27:30.483 [main] INFO  com.harsha.server.MyHttpServer - server started running on port: 8080
+18:28:02.247 [HTTP-Dispatcher] INFO  com.harsha.util.Helper - Time taken for serializing 10 Java Objects into JSON is: 99ms
+18:28:47.669 [main] INFO  com.harsha.server.MyHttpServer - server started running on port: 8080
+18:28:51.556 [HTTP-Dispatcher] INFO  com.harsha.util.Helper - Time taken for serializing 10 Java Objects into JSON is: 85ms
+18:29:10.495 [main] INFO  com.harsha.server.MyHttpServer - server started running on port: 8080
+18:29:22.960 [main] INFO  com.harsha.server.MyHttpServer - server started running on port: 8080
+18:29:39.080 [main] INFO  com.harsha.server.MyHttpServer - server started running on port: 8080
+18:29:42.542 [HTTP-Dispatcher] INFO  com.harsha.util.Helper - Time taken for serializing 10 Java Objects into JSON is: 91ms

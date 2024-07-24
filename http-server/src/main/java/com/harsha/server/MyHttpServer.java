@@ -14,10 +14,14 @@ public class MyHttpServer {
 
     private static final Logger log = LoggerFactory.getLogger(MyHttpServer.class);
 
+    /**
+     * Creates a HTTP server
+     * @param port port number to listen.
+     */
     public void createServer(int port) {
         try {
             HttpServer httpServer = HttpServer.create(new InetSocketAddress(port), 0);
-            httpServer.createContext("/", new MyHttpReqHandler());
+            httpServer.createContext("/api/v1/users", new MyHttpReqHandler());
             httpServer.start();
             log.info("server started running on port: {}", port);
         } catch (IOException ex) {

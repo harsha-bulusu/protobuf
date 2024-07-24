@@ -5,6 +5,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonSerializer<T>{
 
+    /**
+     * Serializes Java object to JSON.
+     * @param object Java object
+     * @return serialized JSON
+     */
     public String serialize(T object) {
         ObjectMapper mapper = new ObjectMapper();
 

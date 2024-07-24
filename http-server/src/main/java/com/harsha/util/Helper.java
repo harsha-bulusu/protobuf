@@ -20,7 +20,6 @@ public class Helper {
     private static final Logger log = LoggerFactory.getLogger(Helper.class);
 
     public static Map<String, String> extractQueryParams(HttpExchange exchange) {
-        System.out.println("req query");
         URI requestURI = exchange.getRequestURI();
         String rawQuery = requestURI.getRawQuery();
         Map<String, String> queryParams = new HashMap<>();
@@ -29,10 +28,15 @@ public class Helper {
             String[] keyAndValue = param.split("=");
             queryParams.put(keyAndValue[0], keyAndValue[1]);
         }
-        System.out.println(queryParams);
         return queryParams;
     }
 
+    /**
+     * Generates a serialized protobuf of java objects with given size
+     * @param id request-id
+     * @param size number of java objects
+     * @return serialized protobuf
+     */
     public static byte[] getProtoBufCollection(int id, int size) {
         Builder employeeListBuilder = EmployeeList.newBuilder();
 
@@ -50,8 +54,13 @@ public class Helper {
         return serializedEmployeeList;
     }
 
+    /**
+     * Generates a serialized JSON of java objects with given size
+     * @param id request-id
+     * @param size number of java objects
+     * @return serialized JSON
+     */
     public static String getJsonCollection(int id, int size) {
-        System.out.println("getJsonCollection");
         Employees employees = new Employees();
         List<Employee> employeeCollection = new ArrayList<>();
 

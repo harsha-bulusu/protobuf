@@ -1,0 +1,2 @@
+# Maven command to create a project
+mvn archetype:generate -DgroupId=com.harsha -DartifactId=demo-java -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
